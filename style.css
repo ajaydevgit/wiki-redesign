@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #fdfbfb, #ebedee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Background blobs */
+.bg-blobs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.7;
+}
+
+.pink {
+    width: 300px;
+    height: 300px;
+    background: #ff9a9e;
+    top: 10%;
+    left: 10%;
+}
+
+.blue {
+    width: 350px;
+    height: 350px;
+    background: #a1c4fd;
+    bottom: 15%;
+    right: 10%;
+}
+
+.purple {
+    width: 250px;
+    height: 250px;
+    background: #c2a1fd;
+    top: 60%;
+    left: 40%;
+}
+
+/* Glass card */
+.glass {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 420px;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    margin: 10px 0 25px;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    margin-bottom: 25px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.card {
+    padding: 14px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.03);
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+}
