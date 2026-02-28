@@ -52,7 +52,7 @@ body {
     left: 40%;
 }
 
-/* Glass card */
+/* Glass container */
 .glass {
     background: rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(20px);
@@ -72,7 +72,7 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
-p {
+.subtitle {
     margin: 10px 0 25px;
     color: #444;
 }
@@ -105,4 +105,11 @@ input {
 .card:hover {
     transform: translateY(-6px) scale(1.03);
     background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+}
+
+.disclaimer {
+    margin-top: 22px;
+    font-size: 12px;
+    opacity: 0.6;
+    line-height: 1.4;
 }
